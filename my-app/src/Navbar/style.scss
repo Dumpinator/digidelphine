@@ -11,7 +11,7 @@ nav {
 		font-weight: bold;
 		font-size: 16px;
 		color: #fff;
-		background-color: v.$BgMainColor;
+		background-color: #fff;
 		box-shadow: 0 10px 20px 1px rgb( 0 0 0 / 45% );
 		position: relative;
 		z-index: 15;
@@ -33,8 +33,8 @@ nav {
 	}
 
 	.list {
-		box-shadow: 0 10px 20px 1px rgb( 0 0 0 / 45% );
-		background-color: v.$BgMainColor;
+		//box-shadow: 0 10px 20px 1px rgb( 0 0 0 / 45% );
+		background-color: #fff;
 
 		display: flex;
 		flex-direction: row;
@@ -50,7 +50,7 @@ nav {
 
 			svg {
 				font-size: 1.4em;
-				color: aqua;
+				color: #3C3C3C;
 			}
 		}
 
@@ -70,14 +70,20 @@ nav {
 					display: inline-block;
 					text-decoration: none;
 					padding: 20px 30px; // détermine la hauteur de nav
-					color: #858aa0;
-
+					color: #888;
 					&:hover {
-						color: #fff;
+						color: #3C3C3C;
+						/*
 						text-shadow: #fff 0 0 5px, #1e90ff 0 0 10px, #fff 0 0 15px, #1e90ff 0 0 20px, #1e90ff 0 0 30px;
-						transition: text-shadow 0.3s ease;
+						*/
+						transition: color 0.3s ease;
 					}
+
 				}
+			}
+
+			li:last-child {
+				padding-right: 10px;
 			}
 		}
 	}
@@ -135,8 +141,6 @@ nav {
 					   transform: scale(1.1);
 				   }
 				}
-
-
 			}
 		}
 
