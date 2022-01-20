@@ -5,13 +5,14 @@ import Navbar from './Navbar';
 
 // == Import datas
 import summaryData from './data/summary';
+import Home from "./Home";
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Navbar summary={summaryData}/>
-
+        <Home />
       </div>
     </Router>
   );

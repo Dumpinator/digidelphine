@@ -44,7 +44,6 @@ const Navbar = ({ summary }) => {
                         { menu }
                         <li>
                             <Icons />
-                            <Icons />
                         </li>
                     </ul>
                 </div>
