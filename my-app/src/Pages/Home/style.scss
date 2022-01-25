@@ -21,7 +21,7 @@
 			font-size: 30px;
 			font-weight: bold;
 		}
-		svg { color: v.$yellow-color; position: relative; top: 5px; }
+		svg { color: v.$pink-color; position: relative; top: 5px; }
 	}
 
 	.bio {
@@ -75,7 +75,7 @@
 		}
 		.text {
 
-			padding: 1rem;
+			padding: 2rem 0;
 			text-align: start;
 			width: 50%;
 
@@ -106,11 +106,62 @@
 .section2 {
 	background-color: v.$yellow-color;
 	height: 490px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	.title {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: v.$black-color;
+		span {
+			display: inline-block;
+			padding: 5px;
+			font-size: 30px;
+			font-weight: bold;
+		}
+		svg { color: v.$blue-color; position: relative; top: 5px; }
+	}
+
+	.text {
+			text-align: center;
+
+			.btn {
+				font-weight: 600;
+				text-transform: uppercase;
+				border-radius: 0%;
+				border: black 3px solid;
+				padding: 10px 20px;
+			}
+			.btn:hover {
+				background-color: v.$blue-color;;
+				color: white;
+			}
+		}
 }
 
 .section3 {
 	background-color: #fff;
 	height: 960px;
+
+	.projets {
+		display: flex;
+		flex-direction: wrap;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 20px;
+		color: v.$blue-color;
+		span {
+			display: inline-block;
+			padding: 5px;
+			font-size: 30px;
+			font-weight: bold;
+		}
+		svg { color: v.$yellow-color; position: relative; top: 5px; }
+	}
 }
 
 .section4 {

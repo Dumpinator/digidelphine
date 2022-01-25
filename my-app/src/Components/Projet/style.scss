@@ -1,0 +1,9 @@
+@use 'src/styles/vars' as v;
+
+#icons {
+	padding: 20px 10px;
+}
+
+#icons:hover {
+	color: v.$blue-color;
+}

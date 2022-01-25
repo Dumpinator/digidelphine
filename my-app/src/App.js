@@ -1,11 +1,11 @@
 // import logo from './logo.svg';
 import { BrowserRouter as Router } from "react-router-dom";
 import './App.scss';
-import Navbar from './Navbar';
+import Navbar from './Components/Navbar';
 
 // == Import datas
 import summaryData from './data/summary';
-import Home from "./Home";
+import Home from "./Pages/Home";
 
 function App() {
   return (
