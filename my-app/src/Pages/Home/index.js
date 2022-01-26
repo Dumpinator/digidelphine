@@ -1,11 +1,12 @@
 import React from 'react';
 //import { CSSTransition } from 'react-transition-group';
 import { AiFillFileText, AiTwotoneStar, AiFillHeart } from 'react-icons/ai'
+import Projet from '../../Components/Projet';
 //import moi from './moi.png'
 import './style.scss';
 
 
-const Home = () => {
+const Home = ({ projectsData }) => {
 
     return (
         <div className='container'>
@@ -51,6 +52,14 @@ const Home = () => {
                         <span><AiTwotoneStar /></span>
                     </h1>
                 </div>
+                <div className='container'>
+                    {
+                        projectsData && projectsData.map((project, index) => (
+                            index < 3 && <Projet key={project.id} project={project} />
+                        )).reverse()
+                    }
+                </div>
+                <button className='btn'>Voir tout</button>
             </div>
             <div className='section4'></div>
             <div className='section5'></div>

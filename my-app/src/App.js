@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar';
 
 // == Import datas
 import summaryData from './data/summary';
+import projectsData from './data/projects';
 import Home from "./Pages/Home";
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
     <Router>
       <div className="App">
         <Navbar summary={summaryData}/>
-        <Home />
+        <Home projectsData={projectsData} />
       </div>
     </Router>
   );

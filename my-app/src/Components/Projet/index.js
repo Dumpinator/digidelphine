@@ -1,15 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 // import { CSSTransition } from 'react-transition-group';
-import { ImLinkedin } from 'react-icons/im'
 import './style.scss';
 
-
-const Projet = ({ icon }) => {
+const Projet = ({ project }) => {
 
     return (
-        <Link to='/' id='icons'>
-            { icon ? icon : <ImLinkedin /> }
+        <Link to='/' id={`project-${project.id}`}>
+            <div className='box' style={{ backgroundImage: `url('/p1.jpeg')` }}>
+                <div className='box-tips'>
+                    <div className='box-content'>
+                        <div className='box-content-title'>{project.title}</div>
+                        <div className='box-content-text'>{project.text}</div>
+                        <div className='box-content-tags'>{project.tags}</div>
+                    </div>
+                </div>
+            </div>
+            <div className='box2'></div>
         </Link>
     )
 }

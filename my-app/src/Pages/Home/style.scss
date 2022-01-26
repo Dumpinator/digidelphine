@@ -95,10 +95,10 @@
 				border-radius: 0%;
 				border: black 3px solid;
 				padding: 10px 20px;
-			}
-			.btn:hover {
-				background-color: v.$blue-color;;
-				color: white;
+				&:hover {
+					background-color: v.$blue-color;;
+					color: white;
+				}
 			}
 		}
 	}
@@ -145,7 +145,11 @@
 
 .section3 {
 	background-color: #fff;
-	height: 960px;
+	min-height: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
 	.projets {
 		display: flex;
@@ -161,6 +165,27 @@
 			font-weight: bold;
 		}
 		svg { color: v.$yellow-color; position: relative; top: 5px; }
+	}
+
+	.container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.btn {
+		margin: 6vh 0;
+		font-weight: 600;
+		text-transform: uppercase;
+		border-radius: 0%;
+		border: black 3px solid;
+		padding: 10px 20px;
+		&:hover {
+				background-color: v.$blue-color;;
+				color: white;
+			}
 	}
 }
 

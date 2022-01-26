@@ -1,9 +1,62 @@
 @use 'src/styles/vars' as v;
 
-#icons {
-	padding: 20px 10px;
+.box {
+	position: absolute;
+	z-index: 3;
+	background-color: #FFF;
+	border: v.$black-color 3px solid;
+	border-radius: 1%;
+	margin: 20px;
+	width: 280px;
+	height: 200px;
+
+	.box-tips {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+
+		&:hover {
+			background-color: v.$yellow-color;
+			transition: background-color 0.2s ease-in-out;
+		}
+
+		.box-content {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+			&:hover {
+				opacity: 1;
+				transition: opacity 0.5s ease-in;
+			}
+			&-title, &-text, &-tags {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				padding: 1rem;
+				font-size: 20px;
+				font-weight: bold;
+				color: v.$blue-color;
+			}
+		}
+	}
 }
 
-#icons:hover {
-	color: v.$blue-color;
+.box2 {
+	position: relative;
+	top: 10px;
+	left: 10px;
+	z-index: 1;
+	background-color: v.$blue-color;
+	border: v.$black-color 3px solid;
+	border-radius: 1%;
+	margin: 20px;
+	width: 280px;
+	height: 200px;
 }
