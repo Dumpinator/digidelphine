@@ -1,6 +1,7 @@
 import React from 'react';
 //import { CSSTransition } from 'react-transition-group';
 import { AiFillFileText, AiTwotoneStar, AiFillHeart } from 'react-icons/ai'
+import { Link } from 'react-router-dom';
 import Projet from '../../Components/Projet';
 //import moi from './moi.png'
 import './style.scss';
@@ -15,7 +16,6 @@ const Home = ({ projectsData }) => {
                     <h1>Du design qui fait sens
                         <span><AiFillHeart /></span>
                     </h1>
-
                 </div>
                 <div className='bio'>
                     <div className='img'>
@@ -59,9 +59,47 @@ const Home = ({ projectsData }) => {
                         )).reverse()
                     }
                 </div>
-                <button className='btn'>Voir tout</button>
+                <Link to={'/projects'}>
+                    <button className='btn'>Voir tout</button>
+                </Link>
             </div>
-            <div className='section4'></div>
+            <div className='section4'>
+                <div className='container'>
+                    <h1 className='title'>Concrètement, où sont mes compétences ? </h1>
+                    <div className='content'>
+                        <div className='rond'>
+                            <div className='push'>
+                                <h2>UX/UI <br /> Design</h2>
+                                <div className='bar'></div>
+                            </div>
+                            <div className='style'>
+                                <h2><span>01</span> Web & <br /> Applications</h2>
+                                <p>Concevoir des interfaces adaptées, intuitives pour répondre aux attentes de l’utilisateur.</p>
+                            </div>
+                        </div>
+                        <div className='rond'>
+                            <div className='push'>
+                                <div className='bar'></div>
+                                <h2>Project <br /> Management</h2>
+                            </div>
+                            <div className='style'>
+                                <h2><span>02</span> Epics & <br /> Backlogs</h2>
+                                <p>Rédaction des fonctionnalités et priorisation des issues Github avec l’équipe technique.</p>
+                            </div>
+                        </div>
+                        <div className='rond'>
+                            <div className='push'>
+                                <h2>User <br /> Centric</h2>
+                                <div className='bar'></div>
+                            </div>
+                            <div className='style'>
+                                <h2><span>03</span> Users & <br /> prototypage</h2>
+                                <p>Placer l'utilisateur au centre et lui permettre de rapidement tester les améliorations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className='section5'></div>
             <div className='section6'></div>
         </div>

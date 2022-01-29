@@ -183,15 +183,119 @@
 		border: black 3px solid;
 		padding: 10px 20px;
 		&:hover {
-				background-color: v.$blue-color;;
-				color: white;
-			}
+			background-color: v.$blue-color;
+			color: white;
+		}
 	}
 }
 
 .section4 {
 	background-color: v.$pink-color;
 	height: 490px;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		.content {
+			margin: 2rem 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			.rond {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				margin: 2rem;
+				position: relative;
+				z-index: 2;
+				background-color: v.$yellow-color;
+				border: black 3px solid;
+				width: 250px;
+				height: 250px;
+				border-radius: 50%;
+
+				&:hover {
+
+					background-color: v.$pink-color;
+					box-shadow: v.$yellow-color 1px 1px 1px 1px;
+
+					.push {
+						//background-color: red;
+						.bar {
+							height: 20px;
+							border: v.$pink-color 3px solid;
+							border-left: 0;
+							border-right: 0;
+							background-color: v.$yellow-color;
+						}
+					}
+
+					h2 {
+						margin: 0;
+						font-weight: bold;
+						font-size: 1.5rem;
+						background: v.$blue-color;
+						padding: 1rem;
+						color: v.$pink-color;
+					}
+				}
+
+				& h2 {
+					& span {
+						color: black;
+						padding: 0.4rem;
+						font-size: 1.5em;
+						text-transform: uppercase;
+					}
+					font-size: 1.2rem;
+					text-transform: uppercase;
+					color: v.$yellow-color;
+				}
+
+				.style {
+
+					& * {
+						margin: 0.4rem 0 0.4rem 0;
+					}
+					p {
+						max-width: 200px;
+					}
+					h1 {
+						margin: 0;
+					}
+					h2 {
+						font-size: 1.5em;
+					}
+
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					position: absolute;
+					bottom: 8px;
+					right: 8px;
+					z-index: 1;
+					background-color: #FFF;
+					border: black 3px solid;
+					width: 250px;
+					height: 250px;
+					border-radius: 50%;
+					opacity: 1;
+					&:hover{
+						opacity: 0;
+						transition: all 0.1s ease-out;
+					}
+				}
+			}
+		}
+	}
 }
 
 .section5 {

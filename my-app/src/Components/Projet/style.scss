@@ -19,7 +19,7 @@
 
 		&:hover {
 			background-color: v.$yellow-color;
-			transition: background-color 0.2s ease-in-out;
+			//transition: background-color 0.2s ease-in-out;
 		}
 
 		.box-content {
@@ -27,6 +27,8 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+			font-weight: bold;
+			color: #FFF;
 
 			height: 100%;
 			width: 100%;
@@ -40,9 +42,16 @@
 				flex-direction: column;
 				justify-content: space-around;
 				padding: 1rem;
-				font-size: 20px;
-				font-weight: bold;
-				color: v.$blue-color;
+			}
+
+			&-title{
+				font-size: 1.5rem;
+			}
+			&-text{
+				font-size: 1.2rem;
+			}
+			&-tags{
+				font-size: 1rem;
 			}
 		}
 	}

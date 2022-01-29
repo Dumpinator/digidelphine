@@ -6,8 +6,8 @@ import './style.scss';
 const Projet = ({ project }) => {
 
     return (
-        <Link to='/' id={`project-${project.id}`}>
-            <div className='box' style={{ backgroundImage: `url('/p1.jpeg')` }}>
+        <Link to={`projects/${project.id}`} id={`project-${project.id}`}>
+            <div className='box' style={{ backgroundImage: `url(${project.image})` }}>
                 <div className='box-tips'>
                     <div className='box-content'>
                         <div className='box-content-title'>{project.title}</div>
