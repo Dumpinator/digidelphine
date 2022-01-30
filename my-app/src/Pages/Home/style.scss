@@ -222,20 +222,24 @@
 				border-radius: 50%;
 
 				&:hover {
-
 					background-color: v.$pink-color;
 					box-shadow: v.$yellow-color 1px 1px 1px 1px;
 
 					.push {
-						//background-color: red;
+						opacity: 1;
+						transition: opacity 0.5s ease-in;
+
 						.bar {
 							height: 20px;
-							border: v.$pink-color 3px solid;
-							border-left: 0;
-							border-right: 0;
+							border: v.$pink-color 4px solid;
+							border-width: 3px 0 3px 0;
 							background-color: v.$yellow-color;
 						}
 					}
+				}
+
+				.push {
+					opacity: 0;
 
 					h2 {
 						margin: 0;
@@ -247,33 +251,9 @@
 					}
 				}
 
-				& h2 {
-					& span {
-						color: black;
-						padding: 0.4rem;
-						font-size: 1.5em;
-						text-transform: uppercase;
-					}
-					font-size: 1.2rem;
-					text-transform: uppercase;
-					color: v.$yellow-color;
-				}
+
 
 				.style {
-
-					& * {
-						margin: 0.4rem 0 0.4rem 0;
-					}
-					p {
-						max-width: 200px;
-					}
-					h1 {
-						margin: 0;
-					}
-					h2 {
-						font-size: 1.5em;
-					}
-
 					display: flex;
 					flex-direction: column;
 					align-items: center;
@@ -288,9 +268,30 @@
 					height: 250px;
 					border-radius: 50%;
 					opacity: 1;
+
 					&:hover{
 						opacity: 0;
 						transition: all 0.1s ease-out;
+					}
+
+					h2, p {
+						margin: 0.4rem 0 0.4rem 0;
+					}
+					p {
+						max-width: 200px;
+					}
+
+					h2 {
+						font-size: 1.5rem;
+						text-transform: uppercase;
+						color: v.$yellow-color;
+
+						& span {
+							color: black;
+							padding: 0.4rem;
+							font-size: 1.5em;
+							text-transform: uppercase;
+						}
 					}
 				}
 			}

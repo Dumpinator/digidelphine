@@ -100,7 +100,9 @@ const Home = ({ projectsData }) => {
                     </div>
                 </div>
             </div>
-            <div className='section5'></div>
+            <div className='section5'>
+
+            </div>
             <div className='section6'></div>
         </div>
     )
