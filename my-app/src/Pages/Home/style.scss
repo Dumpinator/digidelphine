@@ -191,7 +191,7 @@
 
 .section4 {
 	background-color: v.$pink-color;
-	height: 490px;
+	min-height: 490px;
 
 	.container {
 		display: flex;
@@ -206,6 +206,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			flex-wrap: wrap;
 
 			.rond {
 				display: flex;

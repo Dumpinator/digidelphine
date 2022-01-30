@@ -12,23 +12,25 @@ nav {
 		font-size: 16px;
 		color: #fff;
 		background-color: #fff;
-		box-shadow: 0 10px 20px 1px rgb( 0 0 0 / 45% );
+		box-shadow: 0 10px 20px 1px v.$black-color-a;
 		position: relative;
 		z-index: 15;
 		display: none;
 
 		.is-open {
-			-webkit-filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #1e90ff) drop-shadow(0 0 15px #fff) drop-shadow(0 0 20px #1e90ff) drop-shadow(0 0 30px #1e90ff) drop-shadow(0 0 40px #1e90ff) drop-shadow(0 0 50px #1e90ff);
-			filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #1e90ff) drop-shadow(0 0 15px #fff) drop-shadow(0 0 20px #1e90ff) drop-shadow(0 0 30px #1e90ff) drop-shadow(0 0 40px #1e90ff) drop-shadow(0 0 50px #1e90ff);
+			//-webkit-filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #1e90ff) drop-shadow(0 0 15px #fff) drop-shadow(0 0 20px #1e90ff) drop-shadow(0 0 30px #1e90ff) drop-shadow(0 0 40px #1e90ff) drop-shadow(0 0 50px #1e90ff);
+			//filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #1e90ff) drop-shadow(0 0 15px #fff) drop-shadow(0 0 20px #1e90ff) drop-shadow(0 0 30px #1e90ff) drop-shadow(0 0 40px #1e90ff) drop-shadow(0 0 50px #1e90ff);
 			-webkit-transform: rotate(360deg);
 			transform: rotate(360deg) scale(1.2); ;
-			transition: transform 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+			color: v.$blue-color;
 		}
 
 		.is-close {
 			-webkit-transform: rotate(-720deg);
 			transform: rotate(-720deg);
 			transition: transform 0.2s ease-in-out;
+			color: v.$pink-color;
 		}
 	}
 
@@ -70,9 +72,9 @@ nav {
 					display: inline-block;
 					text-decoration: none;
 					padding: 20px 30px; // détermine la hauteur de nav
-					color: #888;
+					color: v.$blue-color;
 					&:hover {
-						color: #3C3C3C;
+						color: v.$orange-color;
 						/*
 						text-shadow: #fff 0 0 5px, #1e90ff 0 0 10px, #fff 0 0 15px, #1e90ff 0 0 20px, #1e90ff 0 0 30px;
 						*/
@@ -111,7 +113,7 @@ nav {
 			justify-content: space-between;
 			padding: 0 1rem;
 			height: 60px;
-			color: v.$mainColor;
+			color: v.$blue-color;
 			z-index: 150;
 		}
 
@@ -124,7 +126,7 @@ nav {
 				max-height: 0;
 				overflow: hidden;
 				transition: all 500ms ease-in-out;
-				background-color: #0A1028;
+				background-color: v.$blue-color;
 
 				.logo {
 					display: none;
@@ -135,6 +137,10 @@ nav {
 					flex-direction: column;
 					align-items: center;
 					width: 100%;
+
+					li > a {
+						color: #fff;
+					}
 
 					li:hover a {
 					   -webkit-transform: scale(1.1);

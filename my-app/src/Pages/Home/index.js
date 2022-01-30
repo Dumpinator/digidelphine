@@ -79,8 +79,8 @@ const Home = ({ projectsData }) => {
                         </div>
                         <div className='rond'>
                             <div className='push'>
-                                <div className='bar'></div>
                                 <h2>Project <br /> Management</h2>
+                                <div className='bar'></div>
                             </div>
                             <div className='style'>
                                 <h2><span>02</span> Epics & <br /> Backlogs</h2>
