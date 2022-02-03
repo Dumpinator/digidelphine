@@ -1,0 +1,51 @@
+@use 'src/styles/vars' as v;
+
+.footer {
+	position: relative;
+	overflow: hidden;
+	background-color: v.$blue-color;
+	min-height: 490px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	.title {
+		color: white;
+	}
+
+	.content {
+		margin: 3rem;
+		.list {
+			margin: 0;
+			text-decoration: none;
+			list-style: none;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+
+			.item {
+				margin: 1rem;
+				color: white;
+				font-size: 1rem;
+				font-weight: bold;
+			}
+		}
+	}
+
+	.style {
+
+		position: absolute;
+		background-color: v.$yellow-color;
+		width: 124px;
+		height: 200px;
+		text-align: center;
+		bottom: -128px;
+		right: -48px;
+		transform: rotate(-45deg);
+		padding: 1rem 0;
+		font-weight: bold;
+		color: v.$black-color;
+		border: v.$black-color 3px solid;
+	}
+}

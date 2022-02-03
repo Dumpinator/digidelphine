@@ -2,13 +2,15 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.scss';
 import Navbar from './Components/Navbar';
+import Footer from "./Components/Footer";
 
 // == Import datas
 import summaryData from './data/summary';
 import projectsData from './data/projects';
 
 import Home from "./Pages/Home";
-import Projets from "./Pages/Projects";
+import Projects from "./Pages/Projects";
+import Project from "./Pages/Project";
 
 function App() {
   return (
@@ -17,8 +19,13 @@ function App() {
             <Navbar summary={summaryData}/>
             <Routes>
                 <Route path='/' element={ <Home projectsData={projectsData} />} />
-                <Route path='/projects' element={ <Projets projectsData={projectsData} />} />
+                <Route path='/projets' element={ <Projects projectsData={projectsData} />} />
+
+          <Route path={"/projets/:id"} element={<Project projectsData={projectsData} />} />
+
+                <Route path='/home' element={<Home projectsData={projectsData} />} />
             </Routes>
+            <Footer />
         </div>
     </Router>
   );

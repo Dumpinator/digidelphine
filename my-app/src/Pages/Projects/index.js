@@ -9,7 +9,7 @@ import Projet from '../../Components/Projet';
 const Projects = ({ projectsData }) => {
 
     return (
-        <div className='section3'>
+        <div className='container-projets'>
             <div className='projets'>
                 <h1>
                     MES PROJETS

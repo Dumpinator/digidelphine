@@ -1,0 +1,91 @@
+@use 'src/styles/vars' as v;
+
+.project {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background-color: v.$orange-color;
+
+	.view {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		//padding: 2rem;
+		justify-content: space-between;
+
+		.left {
+			display: flex;
+			flex-direction: column;
+
+			.view-content {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				height: 100%;
+
+				.content-logo {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					width: 256px;
+					height: 128px;
+					background-color: v.$pink-color;
+					color: v.$blue-color;
+					text-transform: uppercase;
+					font-size: 1.2rem;
+					font-weight: bold;
+					margin: 2rem;
+				}
+
+				.content-text {
+					text-align: start;
+					display:flex;
+					flex-direction: column;
+					max-width: 600px;
+					padding: 2rem;
+
+					h2 {
+						color: #fff;
+						font-size: 1.4rem;
+						font-weight: bold;
+						margin-bottom: 0;
+					}
+
+					h3 {
+						margin: 0;
+						font-weight: lighter;
+						font-size: 1.2rem;
+					}
+
+					p {
+						font-size: 1.2rem;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+
+		.right {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-end;
+			margin: 0 auto;
+
+			.content-img {
+				height: 578px;
+				width: 352px;
+				margin: 2rem;
+				background-color: red;
+				background-size: cover;
+
+				@media screen and (max-width: 600px) {
+					margin: 0;
+				}
+			}
+		}
+	}
+}

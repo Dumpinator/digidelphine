@@ -1,9 +1,12 @@
 import React from 'react';
 //import { CSSTransition } from 'react-transition-group';
-import { AiFillFileText, AiTwotoneStar, AiFillHeart } from 'react-icons/ai'
+import { AiTwotoneStar, AiFillHeart, AiFillCaretDown } from 'react-icons/ai'
 import { Link } from 'react-router-dom';
 import Projet from '../../Components/Projet';
 //import moi from './moi.png'
+import socoon from './soc-min.jpg';
+import fastory from './fas-min.jpg'
+import theNetGroup from './tng-min.jpg'
 import './style.scss';
 
 
@@ -27,7 +30,7 @@ const Home = ({ projectsData }) => {
                     </div>
                     <div className='text'>
                         <h2>Delphine Gaspar</h2>
-                        <h2><span> UX Designer </span> junior à Paris</h2>
+                        <h2><span> UX Designer </span> à Paris</h2>
                         <p>Enchantée 👋,  moi c’est Delphine, je suis UX Designer et prête à intégrer le marché de l’emploi dans ce domaine qui me passionne. </p>
                         <p>J’accompagne les entreprises dans la conception de leur produit. J’interviens dans la création d’un site web en partant d’une page blanche  ou sur la refonte entière ou partielle d’une application mobile, outils saas etc. Je souhaite optimiser des interfaces en proposant un design cohérent et adapté.</p>
                         <p>Mon objectif est d’intégrer l’utilisateur au centre de mes projets. J’ai appris à analyser leurs attentes et répondre à leurs besoins.</p>
@@ -38,11 +41,10 @@ const Home = ({ projectsData }) => {
             <div className='section2'>
                 <div className='title'>
                     <h1>Petit coup d’oeil sur mon expérience
-                        <span><AiFillFileText/></span>
+                        <span><AiFillCaretDown />
+                            <button className='btn'>CV</button>
+                        </span>
                     </h1>
-                </div>
-                <div className='text'>
-                    <button className='btn'>CV</button>
                 </div>
             </div>
             <div className='section3'>
@@ -59,7 +61,7 @@ const Home = ({ projectsData }) => {
                         )).reverse()
                     }
                 </div>
-                <Link to={'/projects'}>
+                <Link to={'/projets'}>
                     <button className='btn'>Voir tout</button>
                 </Link>
             </div>
@@ -101,9 +103,26 @@ const Home = ({ projectsData }) => {
                 </div>
             </div>
             <div className='section5'>
-
+                <div className='container'>
+                    <h1 className='title'>Apprentissage & collaborations</h1>
+                    <div className='text'>
+                        <p>Je remercie mon établissement Hetic pour m’avoir transmis les connaissances liées au web et de m’avoir tendu toutes les clés pour aborder cette nouvelle étape professionnelle : devenir UX designer.</p>
+                        <p> Sans oublier, mon passage au sein d’entreprises expertes et où j’ai pu mettre à pratique mes compétences et acquérir des  connaissances nouvelles sur différents domaines.</p>
+                    </div>
+                    <div className='content'>
+                        <div className='rect'
+                            style={{ backgroundImage: `url(${theNetGroup})` }}
+                        > </div>
+                        <div className='rect'
+                            style={{ backgroundImage: `url(${socoon})` }}
+                        >
+                        </div>
+                        <div className='rect'
+                            style={{ backgroundImage: `url(${fastory})` }}
+                        > </div>
+                    </div>
+                </div>
             </div>
-            <div className='section6'></div>
         </div>
     )
 }
