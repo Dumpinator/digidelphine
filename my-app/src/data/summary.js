@@ -1,7 +1,7 @@
 const section = [
     { section: 'Home'},
     { section: 'Projets' },
-    { section: 'Qui suis-je ?' },
+    { section: 'Moi' },
     { section: 'Contact' },
 ]
 

@@ -82,6 +82,9 @@ nav {
 					}
 
 				}
+				.active {
+					color: v.$orange-color;
+				}
 			}
 
 			li:last-child {
@@ -140,6 +143,10 @@ nav {
 
 					li > a {
 						color: #fff;
+						font-weight: bold;
+					}
+					.active {
+						color: v.$orange-color;
 					}
 
 					li:hover a {

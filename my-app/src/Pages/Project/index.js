@@ -1,26 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useParams } from "react-router-dom";
 //import { CSSTransition } from 'react-transition-group';
 //import { AiTwotoneStar } from 'react-icons/ai'
 import './style.scss';
 
-import schema from './schema-3.jpeg';
-import logoTest from './logoTest.jpeg';
 
 const Project = ({ projectsData }) => {
 
     let { id } = useParams();
     const monProjet = projectsData.filter( item => item.id === Number(id) );
 
-    const { title, tags, description } = monProjet[0];
+    const { title, tags, description, schema, logo, colors } = monProjet[0];
     return (
-        <div className='project'>
+        <div className='project' style={{ backgroundColor: `${colors[0]}` }}>
             <div className='view'>
                 <div className='left'>
                     <div className='view-content'>
-                        <div className='content-logo' style={{ backgroundImage: `url(${logoTest})` }}></div>
+                        <div className='content-logo' style={{ backgroundImage: `url(${logo})` }}></div>
                         <div className='content-text'>
-                            <h2>{description}</h2>
+                            <h2 style={{ color: `${colors[1]}` }}>{description}</h2>
                             <h3>{tags}</h3>
                             {
                                 monProjet && monProjet[0].text.map( (item,i) => (

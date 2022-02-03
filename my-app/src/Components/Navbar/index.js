@@ -3,7 +3,7 @@ import { CSSTransition } from 'react-transition-group';
 import { FaHamburger, FaTemperatureHigh } from 'react-icons/fa'
 
 import './style.scss';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Icons from '../Icons';
 
 const Navbar = ({ summary }) => {
@@ -13,7 +13,7 @@ const Navbar = ({ summary }) => {
 
     const menu = summary.map(({ section }) => <li key={`${ section }`}
         className={`menu m-${section.replaceAll(' ', '-').toLocaleLowerCase()}`}>
-                <Link to={`${section.toLocaleLowerCase()}`}>{ section }</Link>
+                <NavLink to={`${section.toLocaleLowerCase()}`}>{section}</NavLink>
             </li> );
 
     return (
