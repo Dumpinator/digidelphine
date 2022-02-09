@@ -5,20 +5,20 @@ import './style.scss';
 
 const Projet = ({ project }) => {
 
-    const { id, colors } = project;
+    const { id, colors, type, title, tags, image } = project;
     const [hover, setHover] = useState(false);
 
     return (
         <NavLink to={`/projets/${project.id}`} id={`project-${id}`}>
-            <div className='box' style={{ backgroundImage: `url(${project.image})` }}>
+            <div className='box' style={{ backgroundImage: `url(${image})` }}>
                 <div className='box-tips'
                     style={ hover ? { backgroundColor: `${colors[1]}` } : null }
                         onMouseEnter={() => setHover(true)}
                         onMouseLeave={() => setHover(false)}>
                     <div className='box-content'>
-                        <div className='box-content-title'>{project.title}</div>
-                        <div className='box-content-text'>{project.url}</div>
-                        <div className='box-content-tags'>{project.tags}</div>
+                        <div className='box-content-title'>{title}</div>
+                        <div className='box-content-text'>{type}</div>
+                        <div className='box-content-tags'>{tags}</div>
                     </div>
                 </div>
             </div>

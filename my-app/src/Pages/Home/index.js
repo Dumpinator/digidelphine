@@ -3,10 +3,12 @@ import React from 'react';
 import { AiTwotoneStar, AiFillHeart, AiFillCaretDown } from 'react-icons/ai'
 import { Link } from 'react-router-dom';
 import Projet from '../../Components/Projet';
-//import moi from './moi.png'
+
+import moi from './moi.png'
 import socoon from './soc-min.jpg';
 import fastory from './fas-min.jpg'
 import theNetGroup from './tng-min.jpg'
+
 import './style.scss';
 
 
@@ -24,7 +26,7 @@ const Home = ({ projectsData }) => {
                     <div className='img'>
                         <div className='square3'></div>
                         <div className='square'>
-                            {/* <img src={moi} className='test' alt="Logo" /> */}
+                            <img src={moi} className='test' alt="Logo" />
                         </div>
                         <div className='square2'></div>
                     </div>
@@ -40,7 +42,7 @@ const Home = ({ projectsData }) => {
             </div>
             <div className='section2'>
                 <div className='title'>
-                    <h1>Petit coup d’oeil sur mon expérience
+                    <h1>Petit coup d’👀 sur mon expérience
                         <span><AiFillCaretDown />
                             <button className='btn'>CV</button>
                         </span>

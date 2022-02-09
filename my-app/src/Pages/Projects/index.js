@@ -10,7 +10,7 @@ const Projects = ({ projectsData }) => {
 
     return (
         <div className='container-projets'>
-            <div className='projets'>
+            <div className='title'>
                 <h1>
                     MES PROJETS
                     <span><AiTwotoneStar /></span>

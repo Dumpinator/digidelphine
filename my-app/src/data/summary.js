@@ -1,8 +1,7 @@
 const section = [
     { section: 'Home'},
     { section: 'Projets' },
-    { section: 'Moi' },
-    { section: 'Contact' },
+    { section: 'A propos' },
 ]
 
 export default section;

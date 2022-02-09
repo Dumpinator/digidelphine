@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 // import { CSSTransition } from 'react-transition-group';
 import { ImLinkedin } from 'react-icons/im'
 import './style.scss';
@@ -8,9 +7,9 @@ import './style.scss';
 const Icons = ({ icon }) => {
 
     return (
-        <Link to='/' id='icons'>
+        <a target="_blank" href='https://www.linkedin.com/in/delphine-gaspar/' id='icons' rel="noreferrer">
             { icon ? icon : <ImLinkedin /> }
-        </Link>
+        </a>
     )
 }
 

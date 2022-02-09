@@ -2,7 +2,7 @@
 
 .project {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	background-color: v.$orange-color;
@@ -49,9 +49,9 @@
 
 					h2 {
 						color: #fff;
-						font-size: 1.4rem;
+						font-size: 1.6rem;
 						font-weight: bold;
-						margin-bottom: 0;
+						margin: 0;
 					}
 
 					h3 {
@@ -77,15 +77,70 @@
 
 			.content-img {
 				height: 578px;
-				width: 352px;
+				min-width: 340px;
 				margin: 2rem;
-				background-color: red;
+				//background-color: red;
 				background-size: cover;
-
+				background-position: center;
 				@media screen and (max-width: 600px) {
 					margin: 0;
 				}
 			}
+		}
+	}
+
+	.board {
+		display: flex;
+		justify-content: center;
+		img {
+			width: 100%;
+			max-width: 1400px;
+			height: auto;
+		}
+	}
+
+	.swith {
+		background-color: #FFF;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		height: 90px;
+		a {
+			position: relative;
+		}
+
+		.btn {
+			min-width: 148px;
+			position: relative;
+			z-index: 5;
+			font-weight: 600;
+			text-transform: uppercase;
+			border-radius: 0%;
+			border: black 3px solid;
+			padding: 10px 20px;
+			&:hover {
+				background-color: v.$blue-color;
+				color: white;
+			}
+		}
+
+		.tips {
+			position: absolute;
+			width: 142px;
+			height: 38px;
+			z-index: 1;
+			background-color: v.$blue-color;
+			border: v.$black-color 3px solid;
+			border-radius: 1%;
+			top: 5px;
+		}
+
+		.tips-right {
+			left: -6px;
+		}
+		.tips-left {
+			right: -6px;
 		}
 	}
 }
