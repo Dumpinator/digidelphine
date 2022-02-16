@@ -1,0 +1,159 @@
+@use 'src/styles/vars' as v;
+
+
+.container {
+
+	justify-content: flex-start;
+	flex-direction: column;
+
+	.s1 {
+
+		.title {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 20px;
+			color: v.$blue-color;
+			padding: 1rem;
+			span {
+				display: inline-block;
+				padding: 5px;
+				font-size: 30px;
+				font-weight: bold;
+			}
+			svg { color: v.$pink-color; position: relative; top: 5px; }
+		}
+
+		min-height: 600px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		.content {
+
+			position: relative;
+			width: 60%;
+			height: 60vh;
+			margin-bottom: 10vh;
+
+			.box {
+				position: relative;
+				z-index: 3;
+				background-color: #FFF;
+				border: v.$black-color 3px solid;
+				border-radius: 1%;
+				margin: 0;
+				width: 100%;
+				height: 100%;
+				background-size: cover;
+				background-position: center;
+
+			}
+			.box-content {
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				z-index: 1;
+				background-color: v.$blue-color;
+				border: v.$black-color 3px solid;
+				border-radius: 1%;
+				margin: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		@media screen and (max-width: 800px) {
+			.bio {
+				.text {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	.s2 {
+		background-color: v.$pink-color;
+		min-height: 490px;
+		padding: 5em;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		text-align: start;
+
+		.title {
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+			color: v.$blue-color;
+		}
+	}
+
+	.s3 {
+		background-color: #FFF;
+		min-height: 490px;
+		padding: 5em;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		text-align: start;
+
+		.title {
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+			color: v.$blue-color;
+		}
+	}
+
+	.s4 {
+		background-color: v.$yellow-color;
+		height: 490px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		.title {
+			display: flex;
+			align-items: flex-end;
+			//flex-direction: column;
+			justify-content: center;
+			color: v.$black-color;
+
+			h1 {
+				display: flex;
+				flex-wrap: wrap;
+				align-self: center;
+				justify-content: center;
+				padding: 0 0.8em;
+				margin: 0;
+			}
+			span {
+				position: relative;
+				display: flex;
+				padding: 5px;
+				font-size: 30px;
+				font-weight: bold;
+
+				.btn {
+					position: absolute;
+					top: 44px;
+					left: 14px;
+					font-weight: 600;
+					text-transform: uppercase;
+					border-radius: 0%;
+					border: black 3px solid;
+					padding: 10px 20px;
+				}
+				.btn:hover {
+					background-color: v.$blue-color;;
+					color: white;
+				}
+			}
+			svg { color: v.$blue-color; position: relative; top: 5px; margin-left: 24px;}
+		}
+	}
+}

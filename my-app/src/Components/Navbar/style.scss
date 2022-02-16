@@ -148,11 +148,13 @@ nav {
 					.active {
 						color: v.$orange-color;
 					}
-
 					li:hover a {
-					   -webkit-transform: scale(1.1);
-					   transform: scale(1.1);
-				   }
+						-webkit-transform: scale(1.1);
+						transform: scale(1.1);
+					}
+					li:last-child {
+						padding-right: 0;
+					}
 				}
 			}
 		}

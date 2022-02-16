@@ -1,5 +1,4 @@
-import React from 'react';
-//import { CSSTransition } from 'react-transition-group';
+import React, { useEffect } from 'react';
 import { AiTwotoneStar } from 'react-icons/ai'
 import './style.scss';
 
@@ -8,11 +7,18 @@ import Projet from '../../Components/Projet';
 
 const Projects = ({ projectsData }) => {
 
+    useEffect(() => {
+        const body = document.querySelector('#root');
+        body.scrollIntoView({
+            behavior: 'smooth'
+        }, 0)
+    }, []);
+
     return (
         <div className='container-projets'>
             <div className='title'>
                 <h1>
-                    MES PROJETS
+                    Mes projets
                     <span><AiTwotoneStar /></span>
                 </h1>
             </div>

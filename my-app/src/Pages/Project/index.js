@@ -4,6 +4,7 @@ import './style.scss';
 
 
 const Project = ({ projectsData }) => {
+
     const limit = projectsData.length;
     let { id } = useParams();
     const monProjet = projectsData.filter( item => item.id === Number(id) );

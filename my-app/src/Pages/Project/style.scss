@@ -71,15 +71,13 @@
 		.right {
 			display: flex;
 			flex-direction: column;
-			justify-content: flex-start;
-			align-items: flex-end;
+			justify-content: center;
 			margin: 0 auto;
 
 			.content-img {
 				height: 578px;
 				min-width: 340px;
 				margin: 2rem;
-				//background-color: red;
 				background-size: cover;
 				background-position: center;
 				@media screen and (max-width: 600px) {
@@ -120,7 +118,7 @@
 			border: black 3px solid;
 			padding: 10px 20px;
 			&:hover {
-				background-color: v.$blue-color;
+				//background-color: v.$blue-color;
 				color: white;
 			}
 		}

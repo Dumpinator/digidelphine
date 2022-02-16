@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 //import { CSSTransition } from 'react-transition-group';
 import { AiTwotoneStar, AiFillHeart, AiFillCaretDown } from 'react-icons/ai'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Projet from '../../Components/Projet';
 
 import moi from './moi.png'
@@ -13,7 +13,12 @@ import './style.scss';
 
 
 const Home = ({ projectsData }) => {
-
+    useEffect(() => {
+        const body = document.querySelector('#root');
+        body.scrollIntoView({
+            behavior: 'smooth'
+        }, 0)
+    }, []);
     return (
         <div className='container'>
             <div className='section1'>
@@ -36,7 +41,9 @@ const Home = ({ projectsData }) => {
                         <p>Enchantée 👋,  moi c’est Delphine, je suis UX Designer et prête à intégrer le marché de l’emploi dans ce domaine qui me passionne. </p>
                         <p>J’accompagne les entreprises dans la conception de leur produit. J’interviens dans la création d’un site web en partant d’une page blanche  ou sur la refonte entière ou partielle d’une application mobile, outils saas etc. Je souhaite optimiser des interfaces en proposant un design cohérent et adapté.</p>
                         <p>Mon objectif est d’intégrer l’utilisateur au centre de mes projets. J’ai appris à analyser leurs attentes et répondre à leurs besoins.</p>
-                        <button className='btn'>en savoir +</button>
+                        <NavLink to={'/about'}>
+                            <button className='btn'>en savoir +</button>
+                        </NavLink>
                     </div>
                 </div>
             </div>
@@ -63,9 +70,9 @@ const Home = ({ projectsData }) => {
                         )).reverse()
                     }
                 </div>
-                <Link to={'/projets'}>
+                <NavLink to={'/projets'}>
                     <button className='btn'>Voir tout</button>
-                </Link>
+                </NavLink>
             </div>
             <div className='section4'>
                 <div className='container'>

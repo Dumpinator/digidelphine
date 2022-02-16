@@ -11,9 +11,9 @@ const Navbar = ({ summary }) => {
     const [isOpen, setIsOpen] = useState(false)
     const nodeRef = useRef(null)
 
-    const menu = summary.map(({ section }) => <li key={`${ section }`}
+    const menu = summary.map(({ section }) => <li key={`${section}`}
         className={`menu m-${section.replaceAll(' ', '-').toLocaleLowerCase()}`}>
-                <NavLink to={`${section.toLocaleLowerCase()}`}>{section}</NavLink>
+        <NavLink to={`${section.toLocaleLowerCase()}`}>{section}</NavLink>
             </li> );
 
     return (
