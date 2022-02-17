@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { AiFillHeart, AiFillCaretDown } from 'react-icons/ai'
+import React, { useEffect } from 'react';
+import { AiFillCaretDown, AiOutlineTwitter } from 'react-icons/ai'
 import {  Link } from "react-router-dom";
 import './style.scss';
 
@@ -18,7 +18,7 @@ const About = () => {
             <div className='s1'>
                 <div className='title'>
                     <h1>Je vous raconte tout ici...
-                        <span><AiFillHeart /></span>
+                        <span><AiOutlineTwitter /></span>
                     </h1>
                 </div>
                 <div className='content'>

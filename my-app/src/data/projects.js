@@ -53,7 +53,7 @@ const section = [
             'Je suis intervenue dans le cadre de mon alternance dans le but de proposer une interface plus en phase avec le design d’aujourd’hui et apporter un appui à l’équipe technique.',
         ],
     },
-
+    /*
     {
         id: 4,
         title: 'Toto',
@@ -91,6 +91,7 @@ const section = [
             'J’ai pris plaisir à refondre cette plateforme de jeu d’échec en ligne en apportant des solutions concrètes sur les différentes problématiques rencontrées. La refonte visait à faciliter la navigation pour les débutants.',
         ],
     },
+    */
 ]
 
 export default section;

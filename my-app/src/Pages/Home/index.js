@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
-//import { CSSTransition } from 'react-transition-group';
 import { AiTwotoneStar, AiFillHeart, AiFillCaretDown } from 'react-icons/ai'
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import Projet from '../../Components/Projet';
 
 import moi from './moi.png'
@@ -51,7 +50,9 @@ const Home = ({ projectsData }) => {
                 <div className='title'>
                     <h1>Petit coup d’👀 sur mon expérience
                         <span><AiFillCaretDown />
-                            <button className='btn'>CV</button>
+                            <Link to={'/CV.pdf'} target={'_blank'} rel='noopener noreferrer'>
+                                <button className='btn'>CV</button>
+                            </Link>
                         </span>
                     </h1>
                 </div>
