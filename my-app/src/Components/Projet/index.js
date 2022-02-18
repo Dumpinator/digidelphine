@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-// import { CSSTransition } from 'react-transition-group';
 import './style.scss';
 
 const Projet = ({ project }) => {

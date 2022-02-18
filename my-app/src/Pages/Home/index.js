@@ -1,12 +1,9 @@
 import React, { useEffect } from 'react';
-import { AiTwotoneStar, AiFillHeart, AiFillCaretDown } from 'react-icons/ai'
+import { AiTwotoneStar, AiFillCaretDown, AiFillLike } from 'react-icons/ai'
 import { NavLink, Link } from 'react-router-dom';
 import Projet from '../../Components/Projet';
 
 import moi from './moi.png'
-import socoon from './soc-min.jpg';
-import fastory from './fas-min.jpg'
-import theNetGroup from './tng-min.jpg'
 
 import './style.scss';
 
@@ -23,7 +20,7 @@ const Home = ({ projectsData }) => {
             <div className='section1'>
                 <div className='title'>
                     <h1>Du design qui fait sens
-                        <span><AiFillHeart /></span>
+                        <span><AiFillLike /></span>
                     </h1>
                 </div>
                 <div className='bio'>
@@ -121,14 +118,14 @@ const Home = ({ projectsData }) => {
                     </div>
                     <div className='content'>
                         <div className='rect'
-                            style={{ backgroundImage: `url(${theNetGroup})` }}
+                            style={{ backgroundImage: `url(/tng-min.jpg)` }}
                         > </div>
                         <div className='rect'
-                            style={{ backgroundImage: `url(${socoon})` }}
+                            style={{ backgroundImage: `url(/soc-min.jpg)` }}
                         >
                         </div>
                         <div className='rect'
-                            style={{ backgroundImage: `url(${fastory})` }}
+                            style={{ backgroundImage: `url(/sfas-min.jpg)` }}
                         > </div>
                     </div>
                 </div>
