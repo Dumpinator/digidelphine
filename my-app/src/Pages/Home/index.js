@@ -3,18 +3,20 @@ import { AiTwotoneStar, AiFillCaretDown, AiFillLike } from 'react-icons/ai'
 import { NavLink, Link } from 'react-router-dom';
 import Projet from '../../Components/Projet';
 
-import moi from './moi.png'
+import moi from './../../assets/moi.png';
 
 import './style.scss';
 
 
 const Home = ({ projectsData }) => {
+
     useEffect(() => {
         const body = document.querySelector('#root');
         body.scrollIntoView({
             behavior: 'smooth'
         }, 0)
     }, []);
+
     return (
         <div className='container'>
             <div className='section1'>
@@ -27,14 +29,14 @@ const Home = ({ projectsData }) => {
                     <div className='img'>
                         <div className='square3'></div>
                         <div className='square'>
-                            <img src={moi} className='test' alt="Logo" />
+                            <img src={moi} className='picture-author' alt="author" />
                         </div>
                         <div className='square2'></div>
                     </div>
                     <div className='text'>
                         <h2>Delphine Gaspar</h2>
                         <h2><span> UX Designer </span> à Paris</h2>
-                        <p>Enchantée 👋,  moi c’est Delphine, je suis UX Designer et prête à intégrer le marché de l’emploi dans ce domaine qui me passionne. </p>
+                        <p>Enchantée 👋 moi c’est Delphine, je pratique l’UX Design depuis 3 ans et je suis basée sur la région Ile-de-France. En janvier 2022, j’ai obtenu mon Mastère en UX Design à Hetic. Durant ma formation, j’ai découvert le travail de Designer d’interface et très vite, j’ai voulu en faire mon métier à temps plein. 😊</p>
                         <p>J’accompagne les entreprises dans la conception de leur produit. J’interviens dans la création d’un site web en partant d’une page blanche  ou sur la refonte entière ou partielle d’une application mobile, outils saas etc. Je souhaite optimiser des interfaces en proposant un design cohérent et adapté.</p>
                         <p>Mon objectif est d’intégrer l’utilisateur au centre de mes projets. J’ai appris à analyser leurs attentes et répondre à leurs besoins.</p>
                         <NavLink to={'/about'}>

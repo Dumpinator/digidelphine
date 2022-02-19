@@ -69,7 +69,7 @@ nav {
 				justify-content: center;
 
 				a {
-					display: inline-block;
+					display: flex;
 					text-decoration: none;
 					padding: 20px 30px; // détermine la hauteur de nav
 					color: v.$blue-color;
@@ -88,6 +88,7 @@ nav {
 			}
 
 			li:last-child {
+				display: flex;
 				padding-right: 10px;
 			}
 		}
