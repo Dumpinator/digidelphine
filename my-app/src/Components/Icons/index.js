@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { ImLinkedin, ImProfile } from 'react-icons/im'
-import { NavLink, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './style.scss';
 
 
@@ -33,33 +33,36 @@ const Icons = ({ icon }) => {
         transition: `all .2s ease-in-out`,
     };
 
-    useEffect(() => {}, []);
-
     const functest = () => {
         setHover(false);
         setHovered(true);
     }
 
-    /*}
-    <Link to={'./CV.pdf'} target={'_blank'} rel='noopener noreferrer' className='icons'
-        onMouseEnter={() => setHover(true)}
-        onMouseLeave={() => functest()}
-    >
-        <ImProfile className='icon1' style={ hover ? fadeOutUp : hovered ? fadeInDown : null } />
-        <ImProfile className='icon2' style={ hover ? fadeInUp : hovered ? fadeOutDown : null } />
-    </Link>
-    */
+    switch (icon) {
+        case 'Linkedin':
+            return (
+                <Link to='https://www.linkedin.com/in/delphine-gaspar/' target={'_blank'} rel='noopener noreferrer' className='icons'
+                    onMouseEnter={() => setHover(true)}
+                    onMouseLeave={() => functest()}
+                >
+                    <ImLinkedin className='icon1' style={ hover ? fadeOutUp : hovered ? fadeInDown : null } />
+                    <ImLinkedin className='icon2' style={ hover ? fadeInUp : hovered ? fadeOutDown : null } />
+                </Link>
+            );
 
-    return (
-            <Link target="_blank" to='https://www.linkedin.com/in/delphine-gaspar/' className='icons' rel="noreferrer"
-                onMouseEnter={() => setHover(true)}
-                onMouseLeave={() => functest()}
-            >
-                <ImLinkedin className='icon1' style={ hover ? fadeOutUp : hovered ? fadeInDown : null } />
-                <ImLinkedin className='icon2' style={ hover ? fadeInUp : hovered ? fadeOutDown : null } />
-            </Link>
-
-    )
+        case 'Profile':
+            return (
+                <Link to={'./CV.pdf'} target={'_blank'} rel='noopener noreferrer' className='icons'
+                    onMouseEnter={() => setHover(true)}
+                    onMouseLeave={() => functest()}
+                >
+                    <ImProfile className='icon1' style={hover ? fadeOutUp : hovered ? fadeInDown : null} />
+                    <ImProfile className='icon2' style={hover ? fadeInUp : hovered ? fadeOutDown : null} />
+                </Link>
+            );
+        default:
+            break;
+    }
 }
 
 export default Icons;

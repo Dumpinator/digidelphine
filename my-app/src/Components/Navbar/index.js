@@ -43,7 +43,8 @@ const Navbar = ({ summary }) => {
                     <ul>
                         { menu }
                         <li>
-                            <Icons />
+                            <Icons icon="Linkedin" />
+                            <Icons icon="Profile" />
                         </li>
                     </ul>
                 </div>

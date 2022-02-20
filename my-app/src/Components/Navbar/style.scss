@@ -71,7 +71,7 @@ nav {
 				a {
 					display: flex;
 					text-decoration: none;
-					padding: 20px 30px; // détermine la hauteur de nav
+					padding: 20px; // détermine la hauteur de nav
 					color: v.$blue-color;
 					&:hover {
 						color: v.$orange-color;
