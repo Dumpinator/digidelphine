@@ -39,7 +39,7 @@ const Project = ({ projectsData }) => {
 
         setNext(testNext(id));
         setPrev(testPrev(id));
-    }, [id]);
+    }, [id, limit]);
 
     return (
         <div className='project' style={{ backgroundColor: `${colors[0]}` }}>
