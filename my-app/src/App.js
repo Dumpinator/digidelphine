@@ -19,12 +19,12 @@ function App() {
         <div className="App">
             <Navbar summary={summaryData}/>
             <Routes>
-                <Route path='/' element={ <Home projectsData={projectsData} />} />
+                <Route exact path='/' element={ <Home projectsData={projectsData} />} />
                 <Route path='/projets' element={ <Projects projectsData={projectsData} />} />
                 <Route path='/projets/:id' element={<Project projectsData={projectsData} />} />
                 <Route path='/home' element={<Home projectsData={projectsData} />} />
                 <Route path='/about' element={<About />} />
-                <Route path='*' element={<Error404 />} />
+                <Route path='/*' element={<Error404 />} />
             </Routes>
             <Footer />
         </div>
