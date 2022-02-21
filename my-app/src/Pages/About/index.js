@@ -49,6 +49,11 @@ const About = () => {
                     <p>
                         À partir de la deuxième année  de cursus, j’ai choisi de me spécialiser en design d’interface. Ce domaine m’a rapidement plu et j’ai souhaité en faire une vocation à temps plein. Plusieurs aspects m’ont attiré :
                     </p>
+                    <ul>
+                        <li>l’appel à ma créativité et l’aptitude à inventer, imaginer quelque chose 🎨</li>
+                        <li>identifier des problèmes et les résoudre ❓</li>
+                        <li>la diversité des projets 💡</li>
+                    </ul>
                     <p>
                         Aujourd’hui, je continue de progresser. En veille constante, je m’intéresse aux tendances du moment. Je m’inspire de sites dédiés ou de vidéos spécialisées. Je me challenge en réalisant des mini-projets courts via des plateformes. Connaissez-vous The Cacatoes Theory? Cette plateforme propose du contenu adapté aux personnes qui souhaitent développer leurs compétences.
                     </p>

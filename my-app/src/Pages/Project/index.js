@@ -13,7 +13,7 @@ const Project = ({ projectsData }) => {
     const [next, setNext] = useState(1);
     const [prev, setPrev] = useState(limit);
 
-    const { title, tags, description, schema, logo, colors, text, board} = monProjet[0];
+    const { tags, description, schema, logo, colors, text, board} = monProjet[0];
 
     useEffect(() => {
         const body = document.querySelector('#root');
@@ -51,10 +51,20 @@ const Project = ({ projectsData }) => {
                             <h2>{description}</h2>
                             <h3>{tags}</h3>
                             {
-                                text && text.map( ( item, i ) => (
-                                    item &&
-                                        <p key={`${title+(i+1)}`}>{item}</p>
-                                ))
+                                text && text.map(( item, i ) => (
+                                    <div key={`${'div' + (i + 1)}`}>
+                                            <p>{item}</p>
+                                            {
+                                                i === 0 ?
+                                                    <h4><span>🙇🏻‍♀️</span>Mon rôle</h4>
+                                                :
+                                                i === 1 ?
+                                                    <h4><span>💪🏻</span>Points forts</h4>
+                                                : null
+                                            }
+                                        </div>
+                                    )
+                                )
                             }
                         </div>
                     </div>

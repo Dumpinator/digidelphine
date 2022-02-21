@@ -60,9 +60,19 @@
 						font-size: 1.2rem;
 					}
 
-					p {
+					h4 {
+						span {
+							padding: 1rem;
+						}
+						color: #fff;
+						line-height: 1;
 						font-size: 1.2rem;
 						font-weight: bold;
+						margin: 0;
+					}
+
+					p {
+						font-size: 1.2rem;
 					}
 				}
 			}
