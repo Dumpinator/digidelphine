@@ -36,9 +36,12 @@ const Home = ({ projectsData }) => {
                     <div className='text'>
                         <h2>Delphine Gaspar</h2>
                         <h2><span> UX Designer </span> à Paris</h2>
-                        <p>Enchantée 👋 moi c’est Delphine, je pratique l’UX Design depuis 3 ans et je suis basée sur la région Ile-de-France. En janvier 2022, j’ai obtenu mon Mastère en UX Design à Hetic. Durant ma formation, j’ai découvert le travail de Designer d’interface et très vite, j’ai voulu en faire mon métier à temps plein. 😊</p>
-                        <p>J’accompagne les entreprises dans la conception de leur produit. J’interviens dans la création d’un site web en partant d’une page blanche  ou sur la refonte entière ou partielle d’une application mobile, outils saas etc. Je souhaite optimiser des interfaces en proposant un design cohérent et adapté.</p>
-                        <p>Mon objectif est d’intégrer l’utilisateur au centre de mes projets. J’ai appris à analyser leurs attentes et répondre à leurs besoins.</p>
+                        <p>Enchantée 👋</p>
+                        <p>Moi c’est Delphine, je pratique l’UX Design depuis 3 ans et je suis basée sur la région Ile-de-France. En janvier 2022, j’ai obtenu mon Mastère en UX Design à Hetic.</p>
+                        <p>Durant ma formation, j’ai découvert le travail de Designer d’interface et très vite, j’ai voulu en faire mon métier à temps plein 😊</p>
+                        <p>De manière globale, je peux mener des tests utilisateurs et définir les besoins clients, réaliser des audits et répondre aux problèmes ergonomiques rencontrés. Je crée des interfaces adaptées  représenter le produit final au travers de wireframes, de maquettes, et d’un prototypage fonctionnel.</p>
+                        <p>Enfin durant mon année d’alternance, j’ai appris déployer des roadmap et gérer le Backlog. La rédaction d’users stories, le découpage des fonctionnalités et les tests de déploiement sont des tâches que je sais réaliser sous Github Project.</p>
+                        <p>J’accompagne les entreprises dans la conception de produits digitaux en faisant appel à mon expertise et ma créativité. Je sais m’adapter et me challenger en créant depuis page blanche un site web ou réaliser une refonte graphique d’une application mobile.  Le design est pour moi un travail de cohésion et d’adaptabilité, c’est la vision que j’en ai aujourd’hui. </p>
                         <NavLink to={'/about'}>
                             <button className='btn'>en savoir +</button>
                         </NavLink>
@@ -47,7 +50,7 @@ const Home = ({ projectsData }) => {
             </div>
             <div className='section2'>
                 <div className='title'>
-                    <h1>Petit coup d’👀 sur mon expérience
+                    <h1>Petit coup d’👀 sur <br /> mon expérience
                         <span><AiFillCaretDown />
                             <Link to={'/CV.pdf'} target={'_blank'} rel='noopener noreferrer'>
                                 <button className='btn'>CV</button>
