@@ -35,13 +35,11 @@ const Home = ({ projectsData }) => {
                     </div>
                     <div className='text'>
                         <h2>Delphine Gaspar</h2>
-                        <h2><span> UX Designer </span> à Paris</h2>
+                        <h2><span>Product Designer </span> à Paris</h2>
                         <p>Enchantée 👋</p>
-                        <p>Moi c’est Delphine, je pratique l’UX Design depuis 3 ans et je suis basée sur la région Ile-de-France. En janvier 2022, j’ai obtenu mon Mastère en UX Design à Hetic.</p>
-                        <p>Durant ma formation, j’ai découvert le travail de Designer d’interface et très vite, j’ai voulu en faire mon métier à temps plein 😊</p>
-                        <p>De manière globale, je peux mener des tests utilisateurs et définir les besoins clients, réaliser des audits et répondre aux problèmes ergonomiques rencontrés. Je crée des interfaces adaptées  représenter le produit final au travers de wireframes, de maquettes, et d’un prototypage fonctionnel.</p>
-                        <p>Enfin durant mon année d’alternance, j’ai appris déployer des roadmap et gérer le Backlog. La rédaction d’users stories, le découpage des fonctionnalités et les tests de déploiement sont des tâches que je sais réaliser sous Github Project.</p>
-                        <p>J’accompagne les entreprises dans la conception de produits digitaux en faisant appel à mon expertise et ma créativité. Je sais m’adapter et me challenger en créant depuis page blanche un site web ou réaliser une refonte graphique d’une application mobile.  Le design est pour moi un travail de cohésion et d’adaptabilité, c’est la vision que j’en ai aujourd’hui. </p>
+                        <p>Moi c’est Delphine, je pratique le Product Design depuis 3 ans et je suis basée sur la région Ile-de-France. En janvier 2022, j’ai obtenu mon Mastère en Marketing Digital & UX Design à Hetic.</p>
+                        <p>Je représente le produit final au travers de wireframes, de maquettes et d’un prototypage fonctionnel.</p>
+                        <p>Au-delà du design, je peux gérer la partie management de produit. Rédiger des roadmaps, des users stories et procéder à des tests de déploiement sont des missions que j’ai déjà réalisées en tant que Product Owner. J’accompagne les entreprises dans la conception de produits digitaux. Le design est pour moi un travail de cohésion et d’adaptabilité, c’est la vision que j’en ai aujourd’hui.</p>
                         <NavLink to={'/about'}>
                             <button className='btn'>en savoir +</button>
                         </NavLink>
@@ -118,8 +116,15 @@ const Home = ({ projectsData }) => {
                 <div className='container'>
                     <h1 className='title'>Apprentissage & collaborations</h1>
                     <div className='text'>
-                        <p>Je remercie mon établissement Hetic pour m’avoir transmis les connaissances liées au web et de m’avoir tendu toutes les clés pour aborder cette nouvelle étape professionnelle : devenir UX designer.</p>
-                        <p> Sans oublier, mon passage au sein d’entreprises expertes et où j’ai pu mettre à pratique mes compétences et acquérir des  connaissances nouvelles sur différents domaines.</p>
+                        <p>
+                            Grâce à Hetic, j’ai fait mes premiers pas dans le web et développé mes compétences dans le design au travers de projets réels. 🙂
+                        </p>
+                        <p>
+                            Pour continuer de progresser, j’ai intégré plusieurs entreprises où j’ai mis en pratique mon savoir-faire et expérimenté sur le terrain, le métier de Product Designer. J’ai pris conscience que le designer  jouait un rôle important dans la réussite d’un business d’entreprise et ma présence en entreprises était challengeant et responsabilisant.
+                        </p>
+                        <p>
+                            Tous les collaborateurs m’ont apporté quelque chose de nouveau. De par leurs expériences,  j’ai appris à travailler différemment et su profiter de leurs connaissances pour me corriger et m’améliorer en permanence.
+                        </p>
                     </div>
                     <div className='content'>
                         <div className='rect'

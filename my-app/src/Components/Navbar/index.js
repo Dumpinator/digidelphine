@@ -1,10 +1,11 @@
 import React, { useState, useRef } from 'react';
 import { CSSTransition } from 'react-transition-group';
-import { FaHamburger, FaTemperatureHigh } from 'react-icons/fa'
+import { FaHamburger } from 'react-icons/fa'
 
 import './style.scss';
 import { Link, NavLink } from 'react-router-dom';
 import Icons from '../Icons';
+import logo from './../../assets/logo.png';
 
 const Navbar = ({ summary }) => {
 
@@ -36,7 +37,7 @@ const Navbar = ({ summary }) => {
                         !isOpen &&
                         <Link to="/" className="logo-icon">
                             <div className="logo">
-                                <FaTemperatureHigh />
+                                <img src={logo} className='picture-author' alt="logo GD" />
                             </div>
                         </Link>
                     }
