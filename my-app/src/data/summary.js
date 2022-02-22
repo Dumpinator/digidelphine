@@ -1,6 +1,6 @@
 const section = [
     { section: 'Home'},
-    { section: 'Projets' },
+    { section: 'Project' },
     { section: 'About' },
 ]
 
