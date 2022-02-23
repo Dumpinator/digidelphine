@@ -77,7 +77,7 @@ const Project = ({ projectsData }) => {
                 <img src={board} alt='img'/>
             </div>
             <div className='swith' style={{ backgroundColor: `${colors[0]}` }}>
-                <NavLink to={`/projets/${prev}`}>
+                <NavLink to={`/project/${prev}`}>
                     <button className='btn prev'
                         style={hoverL ? { backgroundColor: `${colors[1]}` } : null}
                         onMouseEnter={() => setHoverL(true)}
@@ -86,7 +86,7 @@ const Project = ({ projectsData }) => {
                     <div className='tips tips-left' style={{ backgroundColor: `${colors[1]}` }}></div>
                 </NavLink>
 
-                <NavLink to={`/projets/${next}`}>
+                <NavLink to={`/project/${next}`}>
                     <button className='btn next'
                         style={hoverR ? { backgroundColor: `${colors[1]}` } : null}
                         onMouseEnter={() => setHoverR(true)}

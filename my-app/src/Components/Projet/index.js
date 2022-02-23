@@ -14,7 +14,7 @@ const Projet = ({ project }) => {
     };
 
     return (
-        <NavLink to={`/projets/${project.id}`} id={`project-${id}`} style={hover ? styles : null}>
+        <NavLink to={`/project/${project.id}`} id={`project-${id}`} style={hover ? styles : null}>
             <div className='box' style={{ backgroundImage: `url(${image})` }}>
                 <div className='box-tips'
                     style={hover ? { backgroundColor: `${colors[1]}` } : null}

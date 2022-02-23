@@ -20,8 +20,8 @@ function App() {
             <Navbar summary={summaryData}/>
             <Routes>
                 <Route exact path='/' element={ <Home projectsData={projectsData} />} />
-                <Route path='/projets' element={ <Projects projectsData={projectsData} />} />
-                <Route path='/projets/:id' element={<Project projectsData={projectsData} />} />
+                <Route path='/project' element={ <Projects projectsData={projectsData} />} />
+                <Route path='/project/:id' element={<Project projectsData={projectsData} />} />
                 <Route path='/home' element={<Home projectsData={projectsData} />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/*' element={<Error404 />} />
