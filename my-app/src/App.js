@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import './App.scss';
 import Navbar from './Components/Navbar';
 import Footer from "./Components/Footer";
 
@@ -12,6 +11,8 @@ import Projects from "./Pages/Projects";
 import Project from "./Pages/Project";
 import About from "./Pages/About";
 import Error404 from "./Pages/Error404";
+
+import './App.scss';
 
 function App() {
   return (
