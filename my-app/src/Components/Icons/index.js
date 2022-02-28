@@ -41,13 +41,13 @@ const Icons = ({ icon }) => {
     switch (icon) {
         case 'Linkedin':
             return (
-                <Link to='/test' target={'_blank'} rel='noopener noreferrer' className='icons'
+                <a href='https://www.linkedin.com/in/delphine-gaspar/' target={'_blank'} rel='noopener noreferrer' className='icons'
                     onMouseEnter={() => setHover(true)}
                     onMouseLeave={() => functest()}
                 >
                     <ImLinkedin className='icon1' style={ hover ? fadeOutUp : hovered ? fadeInDown : null } />
                     <ImLinkedin className='icon2' style={ hover ? fadeInUp : hovered ? fadeOutDown : null } />
-                </Link>
+                </a>
             );
 
         case 'Profile':
