@@ -71,7 +71,7 @@ const Home = ({ projectsData }) => {
                         )).reverse()
                     }
                 </div>
-                <NavLink to={'/projets'}>
+                <NavLink to={'/project'}>
                     <button className='btn'>Voir tout</button>
                 </NavLink>
             </div>

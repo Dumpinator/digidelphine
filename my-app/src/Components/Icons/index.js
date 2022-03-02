@@ -50,7 +50,7 @@ const Icons = ({ icon }) => {
                 </a>
             );
 
-        case 'Profile':
+        case 'Profil':
             return (
                 <Link to={'./CV.pdf'} target={'_blank'} rel='noopener noreferrer' className='icons'
                     onMouseEnter={() => setHover(true)}

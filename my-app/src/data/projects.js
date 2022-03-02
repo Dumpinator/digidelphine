@@ -55,25 +55,25 @@ const section = [
             'J’ai pris en main Github Project, un outil de gestion de tickets pour suivre le déploiement des fonctionnalités avec l’équipe technique. Côté design, j’ai affiné ma réflexion UX en touchant un projet complexe.',
         ],
     },
-    /*
     {
         id: 4,
-        title: 'Toto',
-        type: 'Application mobile',
-        description: 'Refonte de l’app mobile & création de l’application web',
-        tags: 'UX/UI',
-        logo: '/l1.jpeg',
-        image: '/p1.jpeg',
-        schema: '/s1.jpeg',
-        board: '/b2.jpeg',
+        title: 'The Cacatoes Theory',
+        type: 'Daily Challenges',
+        description: 'Daily Challenges',
+        tags: 'UX/UI & Design',
+        logo: '/l4.jpeg',
+        image: '/p4.jpeg',
+        schema: '/s4.jpeg',
+        board: '/b4.jpeg',
         url: 'empty',
         colors: ['#FDCF00', '#166CF5'],
         text: [
-            'Lichess.org est une plateforme de jeu d’échec en ligne open-source destinée aux passionnés. Cette plateforme propose différents services : lancer une partie, participer à de grands tournois, suivre des coméptitions ou encore apprendre tout simplement les bases des jeux d’échec en ligne. ',
-            'Dans le cadre d’un projet d’un mois intensif, nous avons eu le plaisir d’accueillir Lichess au sein de notre école et de travailler avec eux sur la refonte de leur plateforme. Leur souhait : faire appel à notre expertise afin d’améliorer la plateforme, d’une part sur l’aspect graphique devenue trop obsolète et peu esthétique. Puis sur la partie user expérience où il fallait rendre la plateforme plus intuitive et simple à comprendre. ',
-            'J’ai pris plaisir à refondre cette plateforme de jeu d’échec en ligne en apportant des solutions concrètes sur les différentes problématiques rencontrées. La refonte visait à faciliter la navigation pour les débutants.',
+            '   ',
+            'J’ai intégré la communauté The Cacatoes Theory afin de progresser en design d’interface. Vous trouverez ici mes différentes créations.',
+            'Continuer de pratiquer sur l’outil Figma ou Adobe XD et découvrir les tendances UX/UI. Bon moyen pour continuer d’éveiller ma créativité!',
         ],
     },
+    /*
 
     {
         id: 5,

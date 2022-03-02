@@ -45,7 +45,7 @@ const Navbar = ({ summary }) => {
                         { menu }
                         <li>
                             <Icons icon="Linkedin" />
-                            <Icons icon="Profile" />
+                            <Icons icon="Profil" />
                         </li>
                     </ul>
                 </div>
