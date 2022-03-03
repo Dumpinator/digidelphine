@@ -37,7 +37,7 @@ const Home = ({ projectsData }) => {
                         <h2>Delphine Gaspar</h2>
                         <h2><span>Product Designer </span> à Paris</h2>
                         <p>Enchantée 👋</p>
-                        <p>Moi c’est Delphine, je suis Product Design depuis 3 ans et je suis basée sur la région Ile-de-France. En janvier 2022, j’ai obtenu mon Mastère en Marketing Digital & UX Design à Hetic.</p>
+                        <p>Moi c’est Delphine, je suis Product Designer depuis 3 ans et je suis basée sur la région Ile-de-France. En janvier 2022, j’ai obtenu mon Mastère en Marketing Digital & UX Design à Hetic.</p>
                         <p>Je représente le produit final au travers de wireframes, de maquettes et d’un prototypage fonctionnel.</p>
                         <p>Au-delà du design, je peux gérer la partie management de produit. Rédiger des roadmaps, des users stories et procéder à des tests de déploiement sont des missions que j’ai déjà réalisées en tant que Product Owner. J’accompagne les entreprises dans la conception de produits digitaux. Le design est pour moi un travail de cohésion et d’adaptabilité, c’est la vision que j’en ai aujourd’hui.</p>
                         <NavLink to={'/about'}>
