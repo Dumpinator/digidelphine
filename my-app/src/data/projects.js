@@ -60,7 +60,7 @@ const section = [
         title: 'The Cacatoes Theory',
         type: 'Daily Challenges',
         description: 'Daily Challenges',
-        tags: 'UX/UI & Design',
+        tags: 'UX/UI',
         logo: '/l4.jpeg',
         image: '/p4.jpeg',
         schema: '/s4.jpeg',

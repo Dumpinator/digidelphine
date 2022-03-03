@@ -21,7 +21,7 @@ const Home = ({ projectsData }) => {
         <div className='container'>
             <div className='section1'>
                 <div className='title'>
-                    <h1>Du design qui fait sens
+                    <h1>Ma touche design en quelques mots
                         <span><AiFillLike /></span>
                     </h1>
                 </div>
@@ -36,10 +36,15 @@ const Home = ({ projectsData }) => {
                     <div className='text'>
                         <h2>Delphine Gaspar</h2>
                         <h2><span>Product Designer </span> à Paris</h2>
-                        <p>Enchantée 👋</p>
-                        <p>Moi c’est Delphine, je suis Product Designer depuis 3 ans et je suis basée sur la région Ile-de-France. En janvier 2022, j’ai obtenu mon Mastère en Marketing Digital & UX Design à Hetic.</p>
-                        <p>Je représente le produit final au travers de wireframes, de maquettes et d’un prototypage fonctionnel.</p>
-                        <p>Au-delà du design, je peux gérer la partie management de produit. Rédiger des roadmaps, des users stories et procéder à des tests de déploiement sont des missions que j’ai déjà réalisées en tant que Product Owner. J’accompagne les entreprises dans la conception de produits digitaux. Le design est pour moi un travail de cohésion et d’adaptabilité, c’est la vision que j’en ai aujourd’hui.</p>
+                        <p>Hello 👋</p>
+                        <p>Moi c’est Delphine, Product Designer depuis 3 ans et basée en Ile-de-France. En janvier 2022, j’ai obtenu mon Mastère en Marketing Digital & UX Design à Hetic.</p>
+                        <p>Comment je procède ? Je crée des interfaces prototypées et fonctionnelles et dont le parcours utilisateur est cohérent, intuitif et adapté aux besoins utilisateurs.</p>
+                        <p>
+                            J’accompagne aussi les équipes techniques dans le suivi des fonctionnalités. En mettant en place des roadmaps, en rédigeant des users stories et en procédant aux tests de déploiement.
+                        </p>
+                        <p>
+                            Le design est pour moi un travail de cohésion, d’adaptabilité et de créativité, c’est la vision que j’en ai aujourd’hui. Une passion pour laquelle  je veux en faire mon métier 😊.
+                        </p>
                         <NavLink to={'/about'}>
                             <button className='btn'>en savoir +</button>
                         </NavLink>
@@ -117,13 +122,13 @@ const Home = ({ projectsData }) => {
                     <h1 className='title'>Apprentissage & collaborations</h1>
                     <div className='text'>
                         <p>
-                            Grâce à Hetic, j’ai fait mes premiers pas dans le web et développé mes compétences dans le design au travers de projets réels. 🙂
+                            C’est à Hetic que j’ai fait mes premiers pas dans le web et développé mes compétences en design. 🙂
                         </p>
                         <p>
-                            Pour continuer de progresser, j’ai intégré plusieurs entreprises où j’ai mis en pratique mon savoir-faire et expérimenté sur le terrain, le métier de Product Designer. J’ai pris conscience que le designer  jouait un rôle important dans la réussite d’un business d’entreprise et ma présence en entreprises était challengeant et responsabilisant.
+                            Pour mettre en pratique ce que j’ai appris, plusieurs entreprises m’ont ouvert leurs portes pour  effectuer un stage ou une alternance.
                         </p>
                         <p>
-                            Tous les collaborateurs m’ont apporté quelque chose de nouveau. De par leurs expériences,  j’ai appris à travailler différemment et su profiter de leurs connaissances pour me corriger et m’améliorer en permanence.
+                            Chaque expérience m’a apporté quelque chose de nouveau. J’ai acquis de nouvelles compétences et pu évoluer dans le design.
                         </p>
                     </div>
                     <div className='content'>
