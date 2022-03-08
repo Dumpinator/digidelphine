@@ -4,7 +4,7 @@ import './style.scss';
 
 const Projet = ({ project }) => {
 
-    const { id, colors, type, title, tags, image } = project;
+    const { id, colors, type, title, image } = project;
     const [hover, setHover] = useState(false);
 
     const styles = {
@@ -23,7 +23,6 @@ const Projet = ({ project }) => {
                     <div className='box-content'>
                         <div className='box-content-title'>{title}</div>
                         <div className='box-content-text'>{type}</div>
-                        <div className='box-content-tags'>{tags}</div>
                     </div>
                 </div>
             </div>

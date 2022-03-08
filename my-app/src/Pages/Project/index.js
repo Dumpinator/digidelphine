@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, NavLink } from "react-router-dom";
+import Tags from './Tags';
 import './style.scss';
 
 
@@ -49,7 +50,7 @@ const Project = ({ projectsData }) => {
                         <div className='content-logo' style={{ backgroundImage: `url(${logo})` }}></div>
                         <div className='content-text'>
                             <h2>{description}</h2>
-                            <h3>{tags}</h3>
+                            {<Tags data={tags} />}
                             {
                                 text && text.map(( item, i ) => (
                                     <div key={`${'div' + (i + 1)}`}>
